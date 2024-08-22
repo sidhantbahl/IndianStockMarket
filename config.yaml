@@ -1,0 +1,16 @@
+directory: 'Nifty Fifty Master Data'
+columns_to_drop:
+  - 'Price'
+  - 'Adj Close.1'
+  - 'Close.1'
+  - 'High.1'
+  - 'Low.1'
+  - 'Open.1'
+  - 'Volume.1'
+rolling_window_1: 10
+rolling_window_2: 50
+model:
+  type: 'RandomForestRegressor'
+  params:
+    n_estimators: 100
+    random_state: 42
